@@ -1,13 +1,13 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)  WEB DEVELOPMENT IMMERSIVE
 
-# JavaScript
+# JavaScript Data Types
 This is the JavaScript lesson.
 
 # Objectives
 *After this lesson, students will be able to:*
 - Understand what JavaScript is
 - Execute JavaScript code
-- Understand JavaScript basics
+- Understand JavaScript Data Types
 
 # What is JavaScript?
 
