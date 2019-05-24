@@ -122,11 +122,34 @@ Math.round(3.9999)
 
 Strings are collections of letters and symbols known as *characters*, and we use them to deal with words and text in JavaScript. Strings are just another type of **value** in Javascript.
 
-```js
-'John'
-'Jane'
-'123'
+There are **three** ways to write a string in JavaScript.
+1. Surround a word or phrase with double quotes, 
 ```
+"like this"
+```
+2. Surround a word or phrase with single quotes, 
+```
+'like this'
+```
+3. Surround a word or phrase with backticks (below the tilde key), 
+```
+`like this`
+```
+
+This last version, with backticks, allows you to inject javascript into a string using something called **"string interpolation."**
+
+#### String Interpolation
+When you wrap a string with backticks, you can "inject" JavaScript into that string, using the following syntax:
+
+```
+const firstName = "Brian"
+const age = 33
+
+`My name is ${firstName} and on my next birthday, I will be ${age + 1} years old.`
+```
+
+As you can see, string interpolation provides an easy way to inject variables or do basic math or logic functions dynamically.
+
 
 #### String helper methods
 
