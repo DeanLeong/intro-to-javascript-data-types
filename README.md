@@ -141,7 +141,7 @@ This last version, with backticks, allows you to inject javascript into a string
 #### String Interpolation
 When you wrap a string with backticks, you can "inject" JavaScript into that string, using the following syntax:
 
-```
+```js
 const firstName = "Brian"
 const age = 33
 
