@@ -461,11 +461,3 @@ A variable that has not been assigned a value has the value undefined.
 ```javascript
 let count;
 ```
-
-# Symbols Data Type
-
-A Symbol is a unique and immutable primitive value and may be used as the key of an Object property.
-
-# Objects Data Type
-
-Objects are a collection of properties. (We will cover objects in-depth in a later lesson)
