@@ -136,20 +136,7 @@ There are **three** ways to write a string in JavaScript.
 `like this`
 ```
 
-This last version, with backticks, allows you to inject javascript into a string using something called **"string interpolation."**
-
-#### String Interpolation
-When you wrap a string with backticks, you can "inject" JavaScript into that string, using the following syntax:
-
-```js
-const firstName = "Brian"
-const age = 33
-
-`My name is ${firstName} and on my next birthday, I will be ${age + 1} years old.`
-```
-
-As you can see, string interpolation provides an easy way to inject variables or do basic math or logic functions dynamically.
-
+This last version, with backticks, allows you to inject javascript into a string using something called **"string interpolation."** (which we'll get to shortly).
 
 #### String helper methods
 
@@ -315,6 +302,18 @@ myNumber = 5;
 ```
 Discuss: why might you want to use const instead of let?
 
+
+#### String Interpolation
+When you wrap a string with backticks, you can "inject" JavaScript into that string, using the following syntax:
+
+```js
+const firstName = "Brian"
+const age = 33
+
+`My name is ${firstName} and on my next birthday, I will be ${age + 1} years old.`
+```
+
+As you can see, string interpolation provides an easy way to inject variables or do basic math or logic functions dynamically.
 
 
 #### NaN
