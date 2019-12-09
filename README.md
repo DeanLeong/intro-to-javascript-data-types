@@ -136,20 +136,7 @@ There are **three** ways to write a string in JavaScript.
 `like this`
 ```
 
-This last version, with backticks, allows you to inject javascript into a string using something called **"string interpolation."**
-
-#### String Interpolation
-When you wrap a string with backticks, you can "inject" JavaScript into that string, using the following syntax:
-
-```
-const firstName = "Brian"
-const age = 33
-
-`My name is ${firstName} and on my next birthday, I will be ${age + 1} years old.`
-```
-
-As you can see, string interpolation provides an easy way to inject variables or do basic math or logic functions dynamically.
-
+This last version, with backticks, allows you to inject javascript into a string using something called **"string interpolation."** (which we'll get to shortly).
 
 #### String helper methods
 
@@ -229,6 +216,105 @@ You can also use the unary `+` operator to convert values to numbers:
 +"42";
 => 42
 ```
+
+
+## Variables and Keywords - Codealong (10 mins)
+
+Variables are used to store data types into the memory of the computer so that they can be referenced later.
+
+
+New variables in JavaScript are declared using the [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let "/en/JavaScript/Reference/Statements/var") or [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const "/en/JavaScript/Reference/Statements/var")` keywords.
+
+If you declare a variable without assigning any value to it, its type is `undefined`.
+
+```javascript
+let a;
+=> undefined
+```
+
+So let's try assigning a value to variable:
+
+```javascript
+const name = 'Alex';
+=> undefined
+
+name
+=> "Alex"
+```
+
+Having made some expressions it becomes evident we want to store these values.
+
+```js
+const myNumber = 1;
+// or also
+
+const myString = 'Greetings y'all!'
+```
+
+The main note to make here is that these variables should always have the `const`, or `let` keyword and use `camelCase`.
+
+#### Assignment Operators
+
+Values are assigned using `=`, and there are also compound assignment statements such as `+=` and `-=`:
+
+```javascript
+let x = 1;
+=> 1
+
+x += 5
+=> 6
+```
+
+You can use `++` and `--` to increment and decrement, respectively. These can be used as prefix or postfix operators.
+
+In Javascript we just discussed two types of values we can use. We call these values objects, which for now just means that in addition to storing some data you also get to use some helpful methods when you are working with them.
+
+* If you want to turn a number into a string you can use a helpful method called `toString`.
+
+```javascript
+(1).toString()
+=> "1"
+/**
+  be careful though,
+  since numbers can be floats
+  javascript might
+  misunderstand you.
+*/
+1.toString()
+=> Float Error
+// but the following works
+1..toString()
+```
+
+### let vs. const
+
+The difference between `let` and `const` are the with let, variables can be reassigned, wheras with const, they cannot.
+Try:
+```js
+let myNumber = 23;
+myNumber = 5;
+```
+
+Now try: 
+```js
+const myNumber = 23;
+myNumber = 5;
+```
+Discuss: why might you want to use const instead of let?
+
+
+#### String Interpolation
+When you wrap a string with backticks, you can "inject" JavaScript into that string, using the following syntax:
+
+```js
+const firstName = "Brian"
+const age = 33
+
+`My name is ${firstName} and on my next birthday, I will be ${age + 1} years old.`
+```
+
+As you can see, string interpolation provides an easy way to inject variables or do basic math or logic functions dynamically.
+
 
 #### NaN
 
@@ -375,11 +461,3 @@ A variable that has not been assigned a value has the value undefined.
 ```javascript
 let count;
 ```
-
-# Symbols Data Type
-
-A Symbol is a unique and immutable primitive value and may be used as the key of an Object property.
-
-# Objects Data Type
-
-Objects are a collection of properties. (We will cover objects in-depth in a later lesson)
