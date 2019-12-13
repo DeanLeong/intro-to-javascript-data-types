@@ -1,6 +1,5 @@
 
 unit: 1
-
 section: javascript
-
 type: lesson
+prereqs: none
