@@ -3,3 +3,4 @@ unit: 1
 section: javascript
 type: lesson
 prereqs: none
+orderingId: 100
