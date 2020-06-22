@@ -248,10 +248,10 @@ Having made some expressions it becomes evident we want to store these values.
 const myNumber = 1;
 // or also
 
-const myString = 'Greetings y'all!'
+const myString = 'Greetings y\'all!'
 ```
 
-The main note to make here is that these variables should always have the `const`, or `let` keyword and use `camelCase`.
+The main notes to make here is that these variables should always have the `const`, or `let` keyword and use `camelCase`. Also remember to escape strings using `\'`.
 
 #### Assignment Operators
 
